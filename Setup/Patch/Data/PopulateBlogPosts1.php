@@ -6,6 +6,7 @@ use Macademy\Blog\Api\PostRepositoryInterface;
 use Macademy\Blog\Model\PostFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
+use Magento\Framework\Setup\Patch\PatchInterface;
 
 class PopulateBlogPosts1 implements DataPatchInterface
 {

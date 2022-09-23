@@ -3,4 +3,3 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="Macademy_Blog"/>
 </config>
-

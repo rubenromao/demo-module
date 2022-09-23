@@ -12,7 +12,7 @@ class LogPostDetailView implements ObserverInterface
         private LoggerInterface $logger,
     ) {}
 
-    public function execute(Observer $observer): void
+    public function execute(Observer $observer)
     {
         $request = $observer->getData('request');
         $this->logger->info('blog post detail viewed', [

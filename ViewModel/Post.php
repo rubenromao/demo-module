@@ -16,26 +16,16 @@ class Post implements ArgumentInterface
         private RequestInterface $request,
     ) {}
 
-    /**
-     * @return array
-     */
     public function getList(): array
     {
         return $this->collection->getItems();
     }
 
-    /**
-     * @return int
-     */
     public function getCount(): int
     {
         return $this->collection->count();
     }
 
-    /**
-     * @return PostInterface
-     * @throws \Magento\Framework\Exception\LocalizedException
-     */
     public function getDetail(): PostInterface
     {
         $id = (int) $this->request->getParam('id');
